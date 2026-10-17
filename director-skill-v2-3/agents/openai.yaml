@@ -1,4 +1,4 @@
 interface:
   display_name: "导演 Skill V2.3"
   short_description: "把一句话中心思想、锁定脚本和表达简报转成可执行的导演方案、分镜与画面合同"
-  default_prompt: "Use $director-skill-v2-2 to turn a one-line central idea, script, or brief into an executable visual directing plan and DIRECTOR_LOCK v1."
+  default_prompt: "Use $director-skill-v2-3 to turn a one-line central idea, script, or brief into an executable visual directing plan and DIRECTOR_LOCK v1."

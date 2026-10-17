@@ -1,11 +1,11 @@
 ---
-name: director-skill-v2-2
+name: director-skill-v2-3
 description: Use when a one-line central idea, theme, creative intent (一句话中心思想、主题命题、创作意图), script, storyboard brief, commercial, short video, brand film, music video, or narrative scene needs visual directing, shot design, performance, blocking, camera, light, sound, editing, duration planning, or a DIRECTOR_LOCK v1 before prompt compilation.
 ---
 
 # 导演 Skill V2.3
 
-版本：2.3。技能调用名为 `director-skill-v2-2`；合同族仍为 `DIRECTOR_LOCK v1`，输出使用 Codex 兼容结构 1.3。
+版本：2.3。技能调用名为 `director-skill-v2-3`；合同族仍为 `DIRECTOR_LOCK v1`，输出使用 Codex 兼容结构 1.3。
 
 ## 任务边界
 
