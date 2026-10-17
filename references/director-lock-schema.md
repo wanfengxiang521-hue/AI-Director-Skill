@@ -57,6 +57,30 @@ DIRECTOR_LOCK:
   lock_status: locked|blocked
 ```
 
+### `ONE_LINE_INTENT` 可选扩展
+
+仅当输入是尚未锁定完整剧情的一句话意义、主题或创作命题，且导演需要把该命题交接为正式锁时，在已有 `director_book` 下补充以下字段；顶层合同族、`version: "1.3"`、`schema_variant`、原有字段及每镜结构不变。这四个字段不属于 `LOCKED_SCRIPT`、`SHOT_BRIEF` 或简单执行任务的必填合同；一句话已经锁定事件和结局时，仍按事实锁执行，不能借扩展补写原因或改写结局。
+
+```yaml
+director_book:
+  one_line_intent:
+    original_sentence: "用户原句与其中已锁定的事实"
+    central_proposition: "导演对原意的释义，不替换原意"
+    subject: "给定主体、明确标注的导演提案，或未知"
+    desire: "可观察的当下目标，缺依据时为未知/未指定"
+    resistance: "可见阻力，缺依据时为未知/未指定"
+    cost: "获授权的可观察取舍；否则为未知/未指定"
+    meaning_guardrail: "不可改的意义、事实及产品/商业主张边界"
+    director_freedom: "获授权提案的人物、场景、事件及执行范围"
+  final_proof_image: "可停住的终态画面与可确认关系；声音主导时注明所依赖的已发生声音"
+  behavior_vocabulary: "围绕主锚点的可观察动作、保持/允许变化的边界及状态差异"
+  information_permission: "观众与人物分别能确认、仍未知的事，以及权限改变的可观察时点；无人物时注明不适用"
+```
+
+`audience_state_A/B` 与 `primary_visual_anchor` 继续使用原字段；扩展只承载一句话构思所需的意义、终态、行为和认知决定，不复制逐镜动作或创建新合同版本。缺依据的动机、前史、关系或代价保持未知；导演提案须与用户事实分开。已锁定的 `SCRIPT_LOCK`、产品真值和商业证明要求优先于提案。
+
+向 `$prompt-skill-v3-2` 交接时，编译器可以压缩措辞或映射为模型语法，但不能替换 `central_proposition`、`final_proof_image`、`behavior_vocabulary` 的保持/变化边界、`information_permission` 的知情顺序或任何锁定事实；不能自行补齐缺失的导演决定。扩展与原有镜头、声音、静音或事实锁冲突时退回导演层修正，不由编译器裁决。
+
 ## 每镜字段
 
 ```yaml
