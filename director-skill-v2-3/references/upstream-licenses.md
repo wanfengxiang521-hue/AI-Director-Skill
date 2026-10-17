@@ -2,7 +2,7 @@
 
 ## MIT 来源
 
-Copyright (c) 2026 wangzhang-wu  
+Copyright (c) 2026 wangzhang-wu
 Copyright (c) 2026 O-Side Media
 Copyright (c) 2026 Iamemily2050 (@iamemily2050)
 
